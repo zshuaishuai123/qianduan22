@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./lib/vue-2.4.0.js"></script>
+</head>
+<body>
+    <div id="app">
+        <input type="button" value="dong" @click='dong'>
+        <input type="button" value="ting" @click='ting'>
+        <h1>{{ msg }}</h1>
+    </div>
+    <script>
+    let vm = new Vue({
+        el:'#app',
+        data:{
+            msg:'12345上山打老虎'
+        },
+        methods:{
+            dong(){
+                clearInterval(this.timeID)
+                this.timeID = setInterval( ()=>{
+                    let start = this.msg.substr(0,1)
+                    let end = this.msg.substr(1)
+                    this.msg = end + start
+                },200)
+            },
+            ting(){
+                clearInterval(this.timeID)
+            }
+        }
+    })
+    </script>
+</body>
+</html>
