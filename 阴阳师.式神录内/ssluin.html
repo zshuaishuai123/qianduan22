@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>《阴阳师》手游式神录_式神三尾狐_三尾狐攻略_三尾狐御魂搭配攻略_觉醒材料_在哪里刷_三尾狐阵容搭配_《阴阳师》手游官网</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/htmleaf-demo.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/yysssl.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <script src="js/jquery-1.12.2.js"></script>
+    <script src="js/ThreeCanvas.js"></script>
+    <script src="js/Snow.js"></script>
+    <script src="js/snowFall.js"></script>
+    <!--<script src="js/jquery.js"></script>-->
+
+
+</head>
+<body>
+<!--roof开始-->
+<div id="NIE-topBar-include">
+    <div class="mune-conter">
+        <div class="mune-left flex">
+            <a id="logo" href="#"><img src="images/logo_b5525b7.png" alt="网易游戏"></a>
+            <img src="images/5b976d036f0494232e6289daeM2YOAF6.jpg" id="NIE-topBar-news">
+            <img src="images/5b976d037f9d2aa51bfb499cbrJ4tZ9d.jpg" id="NIE-topBar-news-none" style="display: none">
+            <!-- 图片显示特效 -->
+            <script>
+                $('#NIE-topBar-news').mouseover(function () {
+                    $('#NIE-topBar-news-none').css({
+                        'display': 'block',
+                        'left': `${$('.mune-conter').offset().left}px`
+                    });
+                    $('#NIE-topBar-news').fadeOut(500)
+                })
+                $('#NIE-topBar-news-none').mouseout(function () {
+                    $('#NIE-topBar-news-none').css({
+                        'display': 'none',
+                        'left': `${$('.mune-conter').offset().left}px`
+                    });
+                    $('#NIE-topBar-news').fadeIn(500)
+                })
+            </script>
+        </div>
+        <div class="munes_right flex">
+            <ul class="flex ">
+                <li id="global_gp_reg"><a href="#">注册帐号</a>
+                    <div></div>
+                </li>
+                <li><a href="#">安卓充值</a>
+                    <div></div>
+                </li>
+                <li><a href="#" id="game-mune">网易游戏全目录 <em id="NIE-topBar-arrIcon"></em></a>
+                    <div></div>
+                </li>
+                <div id="mune-scroll">
+                    <ul id="mune-scroll1">
+                        <a>安卓充值9.9折</a>
+                        <a>任天堂世界第一</a>
+                        <a>塞尔达真好玩</a>
+                        <a>非洲人没有ssr</a>
+                    </ul>
+                    <ul id="mune-scroll2">
+                    </ul>
+                </div>
+                <script>
+                    window.onload = () => {
+                        let box = document.getElementById("mune-scroll");
+                        let one = document.getElementById("mune-scroll1");
+                        let tow = document.getElementById("mune-scroll2"); //获取各个盒子id
+                        let time = null; //设置计时器
+                        tow.innerHTML = one.innerHTML; //复制第一个ul给第二个ul
+                        box.scrollTop = 0; //
+                        let up = () => {
+                            if (box.scrollTop >= one.offsetHeight) {
+                                box.scrollTop = 0;
+                            } else {
+                                box.scrollTop++;
+                            }
+                        }
+                        time = setInterval(up, 50);
+                        box.onmousemove = () => {
+                            clearInterval(time);
+                        }
+                        box.onmouseout = () => {
+                            time = setInterval(up, 50);
+                        }
+                    }
+                </script>
+            </ul>
+        </div>
+        <script>
+            $('.munes_right li').mouseover(function(){
+                let width=$(this).width();
+                console.log(width);
+                $(this).find('div').stop().animate({width :`${width}px`},500)
+            }).mouseout(function(){
+                $(this).find('div').stop().animate({width :`0px`},500)
+            })
+        </script>
+    </div>
+
+</div>
+<!--roof结束-->
+<script type="text/javascript">
+    $.snowFall({
+        //创建粒子数量，密度
+        particleNo: 500,
+        //粒子下拉速度
+        particleSpeed:30,
+        //粒子在垂直（Y轴）方向运动范围
+        particleY_Range:1300,
+        //粒子在垂直（X轴）方向运动范围
+        particleX_Range:1000,
+        //是否绑定鼠标事件
+        bindMouse: false,
+        //相机离Z轴原点距离
+        zIndex:600,
+        //摄像机视野角度
+        angle:55,
+        wind_weight:0
+    });
+</script>
+<!--content开始-->
+<div class="content">
+    <!--目录栏-->
+    <div class="content_top">
+        <ul class="top_left">
+            <li><a href="#">官网首页</a><span class="line"></span></li>
+            <li><a href="#">新闻资讯</a><span class="line"></span></li>
+            <li><a href="#">游戏攻略</a><span class="line"></span></li>
+            <li><a href="#">同人社区</a><span class="line"></span></li>
+            <li><a href="#">官方渠道</a><span class="line"></span></li>
+            <li><a href="#">周边商城</a><span class="line"></span></li>
+            <li><a href="#">宝藏阁</a><span class="line"></span></li>
+            <li><a href="#">网易大神</a><span></span></li>
+        </ul>
+    </div>
+    <!--目录栏结束-->
+    <!--中间栏-->
+    <div class="content_left">
+        <div class="box_input">
+            <input type="text" value="周大帅" class="key_wrod">
+            <a href="javascript:void (0);" class="search_btn">搜素</a>
+        </div>
+        <a href="#" class="logo"><img src="images/100.webp" alt=""></a>
+        <div class="slogon"></div>
+        <div class="content_a">
+            <div class="content_name">
+                <span class="name_txt">三尾狐</span>
+                <span class="lvR"></span>
+            </div>
+            <div class="content_a_img">
+                <div class="content_img1"><img src="images/203.png" alt="" id="img1"></div>
+                <div class="content_img2"><img src="images/202.png" alt="" id="img2"></div>
+            </div>
+            <div class="content_anniu">
+                <a href="javascript:void (0);" class="content_btn1" id="content_btn1">
+                    <i class="show"></i>
+                </a>
+                <a href="javascript:void (0);" class="content_btn2" id="content_btn2">
+                    <i></i>
+                </a>
+                <a href="javascript:void (0);" class="content_btn3" id="content_btn3">
+                    <i></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--中间栏-->
+</div>
+<!--content结束-->
+<!--box1开始-->
+<div class="box_1" id="box_1">
+    <div class="section_container">
+        <h3 class="com_title1"></h3>
+        <div class="zhuanji">
+            <div class="btns">
+                <a href="javascript:void (0);" class="cv_btn" title="帅逼飞飞">
+                    <span class="cv">CV</span>
+                    <span class="name">泽城美雪</span>
+                    <i></i>
+                </a>
+            </div>
+            <div class="zhuanji_txt">
+                <h3>
+                    <em class="flower"></em>
+                    <span>三尾狐</span>
+                </h3>
+                <div class="zhuanji_txt_c">
+                    <div class="zhuanji_txt_wrap">
+                        <p><span>人类的生命，就像樱花一样短暂。<br></span></p>
+                        <p><span>在樱花树下的初次相遇时我就发现，惹人注目的，不是她<br></span></p>
+                        <p><span>那身红白相间的衣服，而是她微笑时绽放的光芒，是她身<br></span></p>
+                        <p><span>边的花香萦绕。这朵高岭之花，美好得微风也贪婪地轻抚<br></span></p>
+                        <p><span>着她的脸，不愿离去。作为一只刚化形的小狐狸，我从此<br></span></p>
+                        <p><span>沉沦。<br></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--box1结束-->
+<!--box2开始-->
+<div class="box_2" id="box_2">
+    <div class="section_container">
+        <h3 class="com_title2"></h3>
+        <div class="qingbao">
+            <div class="date_title">
+                <div class="before_title">
+                    <h3>卸妆</h3>
+                    <div class="pic_wrap">
+                        <img src="images/202.jpg" alt="">
+                    </div>
+                </div>
+                <div class="after_title">
+                    <h3>化妆</h3>
+                    <div class="pic_wrap">
+                        <img src="images/203.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <ul class="dare_list">
+                <li>
+                    <div class="date_name">
+                        <em class="attack fl"></em>
+                        <span>攻击</span>
+                    </div>
+                    <div class="date_name">
+                        <em class="life fl"></em>
+                        <span>生命</span>
+                    </div>
+                    <div class="date_name">
+                        <em class="defence fl"></em>
+                        <span>防御</span>
+                    </div>
+                    <div class="date_name">
+                        <em class="speed fl"></em>
+                        <span>速度</span>
+                    </div>
+                    <div class="date_name">
+                        <em class="baoji fl"></em>
+                        <span>暴击</span>
+                    </div>
+                    <div class="date_name">
+                        <em class="baoshang fl"></em>
+                        <span>暴击伤害</span>
+                    </div>
+                    <div class="date_name">
+                        <em class="mingzhong fl"></em>
+                        <span>效果命中</span>
+                    </div>
+                    <div class="date_name">
+                        <em class="opposite fl"></em>
+                        <span>效果抵抗</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="init_state">
+                        <span class="level  level2"></span>
+                        <span class="value">(124)</span>
+                    </div>
+                    <div class="init_state">
+                        <span class="level  level1"></span>
+                        <span class="value">(875)</span>
+                    </div>
+                    <div class="init_state">
+                        <span class="level  level2"></span>
+                        <span class="value">(124)</span>
+                    </div>
+                    <div class="init_state">
+                        <span class="level  level0"></span>
+                        <span class="value">(124)</span>
+                    </div>
+                    <div class="init_state">
+                        <span class="level  level4"></span>
+                        <span class="value">(124)</span>
+                    </div>
+                    <div class="init_state">
+                        <span class="level"></span>
+                        <span class="value">(150%)</span>
+                    </div>
+                    <div class="init_state">
+                        <span class="level"></span>
+                        <span class="value">(0%)</span>
+                    </div>
+                    <div class="init_state">
+                        <span class="level"></span>
+                        <span class="value">(0%)</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="wakeup_state">
+                        <span class="level level3"></span>
+                        <span class="value">(138)</span>
+                        <span class="added">+14</span>
+                    </div>
+                    <div class="wakeup_state">
+                        <span class="level level2"></span>
+                        <span class="value">(971)</span>
+                        <span class="added">+96</span>
+                    </div>
+                    <div class="wakeup_state">
+                        <span class="level level3"></span>
+                        <span class="value">(75)</span>
+                        <span class="added">+8</span>
+                    </div>
+                    <div class="wakeup_state">
+                        <span class="level level2"></span>
+                        <span class="value">(122)</span>
+                        <span class="added">+30</span>
+                    </div>
+                    <div class="wakeup_state">
+                        <span class="level level4"></span>
+                        <span class="value">(10%)</span>
+                        <span class="added">+0%</span>
+                    </div>
+                    <div class="wakeup_state">
+                        <span class="level"></span>
+                        <span class="value">(150%)</span>
+                        <span class="added">+14</span>
+                    </div>
+                    <div class="wakeup_state">
+                        <span class="level"></span>
+                        <span class="value">(0%)</span>
+                        <span class="added">+0%</span>
+                    </div>
+                    <div class="wakeup_state">
+                        <span class="level"></span>
+                        <span class="value">(0%)</span>
+                        <span class="added">+0%</span>
+                    </div>
+                </li>
+            </ul>
+            <div class="skill_bar">
+                <div class="skills">
+                    <p class="skill_title">基础技能</p>
+                    <ul class="basic_skills lf">
+                        <li>
+                            <a href="javascript:void(0)" class="skill_item1"><img src="images/2021.png" alt=""></a>
+                            <p class="jz">尾袭</p>
+                            <div class="skill_info1">
+                                <em class="arrow"></em>
+                                <h3>尾袭</h3>
+                                <p>带着微笑妩媚地接近，再以迅雷不及掩耳之势用尾巴扇刮敌方目标，造成攻击100%伤害。</p>
+                                <p>Lv.2有20%概率提升自身10点速度，持续1回合</p>
+                                <p>Lv.3伤害增加至110%</p>
+                                <p>Lv.4加速概率增至30%</p>
+                                <p>Lv.5伤害增加至120%，提升速度效果增至20点</p>
+                                <p>Lv.6加速持续回合数增至2</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="skill_item2"><img src="images/2022.png" alt=""></a>
+                            <p class="jz">魅惑</p>
+                            <div class="skill_info2">
+                                <em class="arrow"></em>
+                                <h3>魅惑</h3>
+                                <p>带着微笑妩媚地接近，再以迅雷不及掩耳之势用尾巴扇刮敌方目标</p>
+                                <p>Lv.2吸血效果增至25%</p>
+                                <p>Lv.3概率增至100%</p>
+                                <p>Lv.4吸血效果增至40%</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="skill_item3"><img src="images/2023.png" alt=""></a>
+                            <p class="jz">恩施猪肘</p>
+                            <div class="skill_info3">
+                                <em class="arrow"></em>
+                                <h3>恩施猪肘</h3>
+                                <p>造成伤害时，有50%概率附带20%吸血。</p>
+                                <p>Lv.2牛逼</p>
+                                <p>Lv.3牛逼</p>
+                                <p>Lv.4牛逼</p>
+                                <p>Lv.5牛逼</p>
+                                <p>Lv.6牛逼</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="wakeup_skills fl">
+                    <p class="skill_title">觉醒技</p>
+                    <ul class="awake_skills">
+                        <li class="add_proto">属性增强:速度增加20</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--box2结束-->
+<!--box3开始-->
+<div class="box_3" id="box_3">
+    <div class="section_container">
+        <h3 class="com_title3"></h3>
+        <div class="strategy_part">
+            <div class="strategy_container">
+                <div class="tempWrap1">
+                    <div class="strategy_wrap">
+                        <ul>
+                            <li class="strategy_item">
+                                <a href="#">非酋的自我修养</a><br>
+                                <p>作者:周帅帅</p>
+                            </li>
+                            <li class="strategy_item">
+                                <a href="#">三尾狐的化妆方法</a><br>
+                                <p>作者:周英俊</p>
+                            </li>
+                            <li class="strategy_item">
+                                <a href="#">躺着抽SSR</a><br>
+                                <p>作者:叮当猫</p>
+                            </li>
+                            <li class="strategy_item">
+                                <a href="#">躺着抽SR</a><br>
+                                <p>作者:乔峰</p>
+                            </li>
+                            <li class="strategy_item">
+                                <a href="#">躺着抽R</a><br>
+                                <p>作者:苗人凤</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="pagination">
+                    <a href="javascript:void (0);" class="laft_btn">
+                        <em></em>
+                    </a>
+                    <a href="javascript:void (0);" class="rigth_btn">
+                        <em></em>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--box3结束-->
+<!--box4开始-->
+<div class="box_4" id="box_4">
+    <div class="section_container">
+        <h3 class="com_title4"></h3>
+        <a href="#" class="top_more">查看全部</a>
+        <ul class="tongren_contaier">
+            <li><a href="#">
+                <img src="images/jwh.jpg" alt="">
+                </a>
+                <p>作者:不洗脚的九尾狐</p>
+            </li>
+            <li><a href="#">
+                <img src="images/huahua.jpg" alt="">
+            </a>
+                <p>作者:散步的花花</p>
+            </li>
+            <li><a href="#">
+                <img src="images/zhuazhua.jpg" alt="">
+            </a>
+                <p>作者:无情的爪爪</p>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--box4结束-->
+<!--box5开始-->
+<div class="box_5" id="box_5">
+    <div class="section_container">
+        <h3 class="com_title5"></h3>
+        <div class="img"><a href="yz.html" target="view_window"><img src="images/img1.png" alt=""></a></div>
+        <div class="comment_side_pic"></div>
+    </div>
+</div>
+<!--box5结束-->
+<!--box6开始-->
+<div class="box_6" id="box_6">
+    <div class="section_container">
+        <h3 class="com_title6"></h3>
+        <a href="#" class="to_more">查看全部</a>
+        <div class="picScroll_nav">
+            <a href="javascript:void (0);" class="prev"></a>
+            <a href="javascript:void (0);" class="next"></a>
+            <div class="tempWrp2">
+                <ul class="pic_btn_container">
+                    <li style="float: left;width: 118px;">
+                        <a href="#" class="pic_btn"><img src="images/210.png" alt=""><span>鬼使白</span></a>
+                    </li>
+                    <li style="float: left;width: 118px;">
+                        <a href="#" class="pic_btn"><img src="images/211.png" alt=""><span>鬼使黑</span></a>
+                    </li>
+                    <li style="float: left;width: 118px;">
+                        <a href="#" class="pic_btn"><img src="images/212.png" alt=""><span>男童</span></a>
+                    </li>
+                    <li style="float: left;width: 118px;">
+                        <a href="#" class="pic_btn"><img src="images/213.png" alt=""><span>女童</span></a>
+                    </li>
+                    <li style="float: left;width: 118px;">
+                        <a href="#" class="pic_btn"><img src="images/214.png" alt=""><span>恶鬼</span></a>
+                    </li>
+                    <li style="float: left;width: 118px;">
+                        <a href="#" class="pic_btn"><img src="images/215.png" alt=""><span>孟婆</span></a>
+                    </li>
+                    <li style="float: left;width: 118px;">
+                        <a href="#" class="pic_btn"><img src="images/216.png" alt=""><span>巫蛊师</span></a>
+                    </li>
+                    <li style="float: left;width: 118px;">
+                        <a href="#" class="pic_btn"><img src="images/217.png" alt=""><span>大天使</span></a>
+                    </li>
+                    <li style="float: left;width: 118px;">
+                        <a href="#" class="pic_btn"><img src="images/218.png" alt=""><span>鸦天狗</span></a>
+                    </li>
+                    <li style="float: left;width: 118px;">
+                        <a href="#" class="pic_btn"><img src="images/219.png" alt=""><span>酒吞童子</span></a>
+                    </li>
+                    <li style="float: left;width: 118px;">
+                        <a href="#" class="pic_btn"><img src="images/241.png" alt=""><span>蝴蝶精</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="share">
+            <div class="share1">
+                <span class="share_txt">分享到:</span>
+                <ul class="share_iconBtn">
+                    <li>
+                        <a href="javascript:void (0)" title="分享到微信二维码">
+                          <span class="iconfont icon-unie655"></span>
+                            <em>微信</em>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void (0)" title="分享到空间">
+                            <span class="iconfont icon-qunfengqqkongjian"></span>
+                            <em>空间</em>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void (0)" title="分享到给周帅帅">
+                            <span class="iconfont icon-wxbbiaowang"></span>
+                            <em>皇冠</em>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void (0)" title="分享美妆脖主">
+                            <span class="iconfont icon-shouye"></span>
+                            <em>美妆</em>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyRight">
+            <div class="nie_copyright">
+                <div class="nie_cn_part1">
+                    <span class="nie_cn_logo">
+                        <a href="http://www.163.com" class="a0">
+                            <img src="images/netease.1.png" alt="">
+                        </a>
+                        <a href="http://www.163.com" class="a1">
+                            <img src="images/nie.1.png" alt="">
+                        </a>
+                        <a href="http://www.163.com" class="a2">
+                            <img src="images/wen.png" alt="">
+                        </a>
+                        <a href="http://www.163.com" class="a3">
+                            <img src="images/wen2.png" alt="">
+                        </a>
+                    </span>
+                    <span class="nie_cn_nav">
+                        <i class="nie_cn_nav_i1">
+                            <a href="#">公司简介</a>-
+                            <a href="#">客户服务</a>-
+                            <a href="#">相关法律</a>-
+                            <a href="#">网易游戏</a>-
+                            <a href="#">联系我们</a>-
+                            <a href="#">商务合作</a>-
+                            <a href="#">加入我们</a>-
+                            <a href="#">用户协议</a>
+                            <br>
+                            <i>网易公司版权所有@1997-2018
+                                <a href="#" class="nie_cn_guarduanship">
+                                    点击查看家长监护工程>
+                                </a>
+                            </i>
+                        </i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--box6结束-->
+<a href="https://yys.163.com/shishen/220.html" class="mark_btn1">
+    <img src="images/260.png" alt="">
+    <span class="name1">清姬</span>
+    <span class="name2">上一个</span>
+</a>
+<a href="https://yys.163.com/shishen/220.html" class="mark_btn2">
+    <img src="images/243.png" alt="">
+    <span class="name1">山童</span>
+    <span class="name2">下一个</span>
+</a>
+<div class="nav_bar" id="nav">
+    <lu id="nav">.
+        <li>
+            <a href="#roof" class="nav_item">
+                <span class="icon">
+                    <i></i>
+                </span>
+                <span class="title">首屏</span>
+            </a>
+        </li>
+        <li>
+            <a href="#box_1" class="nav_item">
+                <span class="icon">
+                    <i></i>
+                </span>
+                <span class="title">传记</span>
+            </a>
+        </li>
+        <li>
+            <a href="#box_2" class="nav_item">
+                <span class="icon">
+                    <i></i>
+                </span>
+                <span class="title">情报</span>
+            </a>
+        </li>
+        <li>
+            <a href="#box_3" class="nav_item">
+                <span class="icon">
+                    <i></i>
+                </span>
+                <span class="title">攻略</span>
+            </a>
+        </li>
+        <li>
+            <a href="#box_4" class="nav_item">
+                <span class="icon">
+                    <i></i>
+                </span>
+                <span class="title">同人</span>
+            </a>
+        </li>
+        <li>
+            <a href="#box_5" class="nav_item">
+                <span class="icon">
+                    <i></i>
+                </span>
+                <span class="title">评论</span>
+            </a>
+        </li>
+    </lu>
+    <div class="homepage_btn">
+        <a href="#box_6" class="nav_item">
+        <span class="icon">
+            <i></i>
+        </span>
+            <span class="title">式神录首页</span>
+        </a>
+    </div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>

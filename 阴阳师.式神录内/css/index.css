@@ -1,0 +1,74 @@
+#NIE-topBar-include {
+    width: 100%;
+    height: 60px;
+    background-color: #fbfbfb;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mune-conter {
+    margin: 0 auto;
+    width: 1260px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#NIE-topBar-news-none {
+    position: fixed;
+    top: 65px;
+    left: 490px;
+    z-index: 10;
+}
+.munes_right li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.munes_right li>div{
+}
+.munes_right a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 55px;
+}
+#NIE-topBar-arrIcon{
+    border-width: 4px;
+    border-style: solid;
+    border-color:  #ff3040 transparent transparent transparent;
+}
+#game-mune{
+    width: 100px;
+}
+#mune-scroll{
+    position: relative;
+    width: 100px;
+    height: 55px;
+    overflow: hidden;
+}
+#mune-scroll div{
+    position: absolute;
+    top: 55px;
+    left: 0px;
+}
+#mune-scroll a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 55px;
+}
+.munes_right li div,.munes_right div div{
+    height: 5px;
+    width: 0px;
+    background-color: #ff3040;
+}
