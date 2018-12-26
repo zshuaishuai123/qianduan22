@@ -72,19 +72,27 @@
                             alert('获取失败')
                         }
                     })
+                },
+                add() {
+                    this.$http.post('http://www.liulongbin.top:3005/api/addproduct', { name: this.name }, { emulateJSON: true }).then(result => {
+                        if (result.body.status === 0) {
+                            this.getAllList()
+                            this.name = ''
+                        } else {
+                            alert('添加失败')
+                        }
+                    })
+                },
+                del(id){
+                    this.$http.get('http://www.liulongbin.top:3005/api/delproduct/' +id).then(result =>{
+                        if(result.body.status === 0){
+                            this.getAllList()
+                        } else{
+                            alert('删除失败')
+                        }
+                    })
                 }
-            },
-            add() {
-                this.$http.post('http://www.liulongbin.top:3005/api/addproduct', { name: this.name }, { emulateJSON: true }).then(result => {
-                    if (result.body.status === 0) {
-                        this.getAllList()
-                        this.name = ''
-                    } else {
-                        alert('添加失败')
-                    }
-                })
-            },
-            
+            }
         })
     </script>
 </body>
